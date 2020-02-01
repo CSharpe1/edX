@@ -2,27 +2,39 @@
 
 #Number of times bob occurs is: 2
 
-s = 'adasacabob'
+s = 'adabobobobsacabob'
 #####################################
 
 Bobcount = 0
-count = 0
-keyfound = 0
-
+Num = 0
 length = len(s) - 1
-endpoint = length
-print(endpoint);
-
-while count <= length:
-    if s[count] == 'b':
-        keyfound += 1
-        if s[count+1] == 'o':
-#            print("bo found now to check for b");
-            if s[count+2] == 'b':
-#                print("bob found now increment bob counter");
-                Bobcount += 1
-
-    count += 1
 
 
+
+while Num <= length:
+    if s[Num:Num+3] == 'bob' :      #and check[Num:Num+3] == 3 :
+        Bobcount += 1
+    Num += 1
 print("Number of times bob occurs is:", Bobcount);
+
+
+
+#keyfound = 0
+#new_count = 0
+#check = s
+#endpoint = length
+
+#while Num <= length:
+# #  count()
+#    if s[Num] == 'b' :#and check[Num:Num+3] == 3 :
+#        keyfound += 1
+#  #      print("first b");
+#        print("Slice", check[Num:Num+3]);
+#        if s[Num+1] == 'o':
+#            if s[Num+2] == 'b':
+#                Bobcount += 1
+#    Num += 1
+#print("Number of times bob occurs is:", Bobcount);
+
+
+
