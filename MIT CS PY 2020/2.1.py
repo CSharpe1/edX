@@ -100,43 +100,15 @@ monthlyPaymentRate = 0.04
 Previous_balance = balance
 
 
-
-	# Monthly interest rate= (Annual interest rate) / 12.0
-#Monthly_interest_rate= (annualInterestRate) / 12.0
-# print("Monthly_interest_rate", round(Monthly_interest_rate,2));
-
-
-	# Minimum monthly payment = (Minimum monthly payment rate) x (Previous balance)
-#Minimum_monthly_payment = (monthlyPaymentRate) * (Previous_balance)
-# print("Minimum_monthly_payment", round(Minimum_monthly_payment,2));
-
-	# Monthly unpaid balance = (Previous balance) - (Minimum monthly payment)
-#Monthly_unpaid_balance = (Previous_balance) - (Minimum_monthly_payment)
-# print("Monthly_unpaid_balance", round(Monthly_unpaid_balance,2));
-
-	# Updated balance each month = (Monthly unpaid balance) + (Monthly interest rate x Monthly unpaid balance)
-#Updated_balance_each_month = (Monthly_unpaid_balance) + (Monthly_interest_rate * Monthly_unpaid_balance)
-# print("Updated_balance_each_month", round(Updated_balance_each_month,2));
-
-
-
-
-#print("Month xx Remaining balance:", round(Updated_balance_each_month,2));
-
-
-	#	Monthly interest rate= (Annual interest rate) / 12.0
 Monthly_interest_rate= (annualInterestRate) / 12.0
-	#	Minimum monthly payment = (Minimum monthly payment rate) x (Previous balance)
 Minimum_monthly_payment = (monthlyPaymentRate) * (Previous_balance)
-	#	Monthly unpaid balance = (Previous balance) - (Minimum monthly payment)
 Monthly_unpaid_balance = (Previous_balance) - (Minimum_monthly_payment)
-	#	Updated balance each month = (Monthly unpaid balance) + (Monthly interest rate x Monthly unpaid balance)
 Updated_balance_each_month = (Monthly_unpaid_balance) + (Monthly_interest_rate * Monthly_unpaid_balance)
 print("out of loop");
 
 
 while	Month <	13:
-
+#	previous_balance = Updated_balance_each_month
 	Minimum_monthly_payment = (monthlyPaymentRate) * (Previous_balance)
 
 
@@ -150,7 +122,7 @@ while	Month <	13:
 	print("Updated", Updated_balance_each_month);
 
 
-	previous_balance = Updated_balance_each_month
+	Previous_balance = Updated_balance_each_month
 
 
 	print("Month xx Remaining balance:", round(Updated_balance_each_month,2));
