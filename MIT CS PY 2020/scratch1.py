@@ -98,21 +98,55 @@
 # This function should sum the area and square of the perimeter of the regular polygon. The function returns the sum, rounded to 4 decimal places.
 
 
-import math
+# import math
 
-def polysum(n, s):
-	'''
-	n and s are int
-	return: Sum of area and square of polygon.
-	'''
-	Area_Polygon = 	(0.25	*	n*	s**2)	/	(math.tan(math.pi/n))
-	Perimeter = ((s*n)**2)
-	Sum = Area_Polygon+Perimeter
-	return print(round(Sum,4));
+# def polysum(n, s):
+	# '''
+	# n and s are int
+	# return: Sum of area and square of polygon.
+	# '''
+	# Area_Polygon = 	(0.25	*	n*	s**2)	/	(math.tan(math.pi/n))
+	# Perimeter = ((s*n)**2)
+	# Sum = Area_Polygon+Perimeter
+	# return print(round(Sum,4));
+
+
+####	
+# a = 2
+# b = 12
 	
-	
-	
-	
+# t = 0
+# while a != b:
+	# t = b
+	# b = (a%b)	
+	# print( b);
+
+# def gcdRecur(a,b)
+    # if b == 0:
+        # return a   
+    # else:
+        # return gcdRecur(b, a%b)
+
+############
+
+
+
+
+# def recurPower(base, exp):
+    # '''
+    # base: int or float.
+    # exp: int >= 0
+ 
+    # returns: int or float, base^exp
+    # '''
+    # if exp <= 0:
+        # return 1
+    # else :    
+	    # return base * recurPower (base, exp -1)
+ 
+
+#############
+
 
 
 
