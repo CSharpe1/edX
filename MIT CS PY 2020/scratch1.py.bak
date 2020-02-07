@@ -332,4 +332,4 @@ for x in aDict.values():
 
 print("count", count);
 
-print(sorted(aDict));
+print(sort(aDict));
