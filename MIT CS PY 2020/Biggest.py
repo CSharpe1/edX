@@ -1,4 +1,4 @@
-animals = { 'a': ['aardvark'], 'b': ['baboon'], 'c': ['coati']}
+animals = { 'a': ['aardvark', 'aca','agaga','aaaa'], 'b': ['baboon'], 'c': ['coati']}
 animals['d'] = ['donkey']
 animals['d'].append('dog')
 animals['d'].append('dingo')
@@ -19,3 +19,65 @@ animals['d'].append('dingo')
 
 
 
+x = 0
+# print(animals.keys());
+# print(animals.values());
+
+# for key in animals	:
+	# print(x);
+	# x+= 1
+	
+# for i in sorted(animals.values()):
+	# print(i);
+
+# print(	animals				);
+print("########################");
+#print(animals.values);
+
+# values = animals.values()
+
+
+# best = max(values)
+# words	=	[]
+# for x in animals:
+	# if animals[x]	==	best:
+		# words.append(x)
+	# print(words, best);
+
+# print(animals);
+
+# print("########################");
+# print(best);
+
+
+
+
+# result = None
+# biggestValue = 0
+# for key in aDict.keys():
+    # if len(aDict[key]) >= biggestValue:
+        # result = key
+        # biggestValue = len(aDict[key])
+# print(result);
+
+
+key = 'b'
+print(len(animals[key]));
+
+print("########################");
+print("########################");
+
+
+
+
+for key in animals.keys():
+	print(key);
+
+
+size = 0
+result = None
+for key in animals.keys():
+	print(key);
+	if len(animals[key]) >= size:
+#		print(key, "is bigger than size");
+		result	=	len(animals[key]
