@@ -353,6 +353,11 @@ for x in secretWord:
 	print(secretWord[count0]);
 	count0 += 1
 	for a in lettersGuessed:
+		if lettersGuessed[count1] == secretWord[count0]:
+			print("They are the same");
+			break
+		else :
+
 		print(lettersGuessed[count1]);
 
 

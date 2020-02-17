@@ -1,17 +1,7 @@
 #############################
 ## isWordGuessed
-
 secretWord = 'apple' 
 lettersGuessed = ['e', 'i', 'k', 'p', 'r', 's'] #['a','p','l','e']		#['e', 'i', 'k', 'p', 'r', 's']
-
-
-# print(isWordGuessed(secretWord, lettersGuessed));
-
-#if lettersGuessed in secretWord:
-#	print("All");
-#else :
-#	print("None");
-
 ##    '''
 ##    secretWord: string, the word the user is guessing
 ##    lettersGuessed: list, what letters have been guessed so far
@@ -22,14 +12,11 @@ lettersGuessed = ['e', 'i', 'k', 'p', 'r', 's'] #['a','p','l','e']		#['e', 'i', 
 count = 0
 wordLength = 0
 while count < (len(secretWord)+1):
-	print(count);
 	if lettersGuessed[count] not in secretWord:
 		print("	WRONG !!!!!	", lettersGuessed[count]);
 		break
-	else :# lettersGuessed[count] in secretWord:
+	else :
 		print("	Its in	", lettersGuessed[count]);
-	# else :
-		# print("	WRONG !!!!!	", lettersGuessed[count]);
 		wordLength += 1
 	count	+=	1
 if wordLength == (len(secretWord)+1):

@@ -2,7 +2,7 @@
 ## isWordGuessed
 
 secretWord = 'apple' 
-lettersGuessed = ['a','p','l','e']		#['e', 'i', 'k', 'p', 'r', 's']
+lettersGuessed = ['e', 'i', 'k', 'p', 'r', 's'] #['a','p','l','e']		#['e', 'i', 'k', 'p', 'r', 's']
 
 
 # print(isWordGuessed(secretWord, lettersGuessed));
